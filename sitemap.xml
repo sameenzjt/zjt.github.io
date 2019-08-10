@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.sameen.art/</loc>
+  <lastmod>2019-06-18T02:20:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/index.html</loc>
+  <lastmod>2019-06-18T02:20:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/download/download.html</loc>
+  <lastmod>2019-06-15T14:47:19+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/update-log.html</loc>
+  <lastmod>2019-06-15T14:42:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/about-me/about-me.html</loc>
+  <lastmod>2019-06-18T01:53:24+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/coming-soon/coming-soon.html</loc>
+  <lastmod>2019-06-15T14:42:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/copyright/default.html</loc>
+  <lastmod>2019-06-15T14:42:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/copyright/privacystatement.html</loc>
+  <lastmod>2019-06-15T14:42:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/writings/writings.html</loc>
+  <lastmod>2019-06-15T14:42:58+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/404.html</loc>
+  <lastmod>2019-06-17T13:51:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/resume.html</loc>
+  <lastmod>2019-06-15T14:42:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.sameen.art/page/portfolio.html</loc>
+  <lastmod>2019-06-15T14:42:57+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	
+<!-- TemplateBeginEditable name="doctitle" -->
+	<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<style type="text/css">
+		@font-face{
+			font-family:space-age;
+			src: url("../res/font/space-age-1.ttf");
+		}
+		body{
+			margin: 0px;
+			padding: 50px 0px 0px 0px;
+			border: 0px;
+		}
+		.SAMEEN{
+			font-family:"space-age";
+			font-size: 2em;
+		}
+		.hr{
+			height: 2px;
+			background-color: black;
+		}
+		.text-center a{
+			margin: 0px 0.5%;
+		}
+		footer{
+			margin: 0px 0px;
+		}
+	</style>
+
+<!-- TemplateEndEditable -->
+	
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin: 0px;padding: 0px 8%;">
+	<div class="container-fluid"> 
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html"><span class="SAMEEN">SAMEEN</span></a>
+	</div>
+	<div class="collapse navbar-collapse" id="example-navbar-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://sameen.art">首页</a></li>
+			<li><a href="../blog/blog-index.html">博客</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					页面 <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="../page/download/download.html">资料下载</a></li>
+					<li class="divider"></li>
+					<li><a href="../page/yubo/yubo.html">娱播</a></li>
+					<li><a href="#">EJB</a></li>
+					<li><a href="#">Jasper Report</a></li>
+					
+					
+					<li class="divider"></li>
+					<li><a href="../page/update-log.html">更新记录</a></li>
+				</ul>
+			</li>
+			<li><a href="../page/about-me/about-me.html">关于我</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+	
+	<div style="margin: 0px 8%">
+		<div class="page-header">
+			<h1>
+				<!-- TemplateBeginEditable name="EditRegion6" -->
+				页面标题实例
+				<!-- TemplateEndEditable -->
+				<small>
+					<!-- TemplateBeginEditable name="EditRegion7" -->
+					子标题
+					<!-- TemplateEndEditable -->
+				</small>
+				
+			</h1>
+			<ul class="breadcrumb">
+				<li><a href="https://sameen.art">首页</a></li>
+				<li><a href="../blog/blog-index.html">博客</a></li>
+				<li class="active">文章</li>
+			</ul>
+		</div>
+<!-- TemplateBeginEditable name="EditRegion5" -->
+		<p>
+			这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。
+		</p>
+<!-- TemplateEndEditable -->
+		
+		
+	</div>
+	
+	
+	
+	<footer class="footer" style="width: 100%;">
+	<div class="container">
+		<hr class="hr" />
+		<div class="text-center" style="padding: 0px 20px;">
+			<a href="../blog/blog-index.html" target="_blank" style="color:black">我的博客</a>
+			<a href="https://huaban.com/" target="_blank" style="color:black">花瓣</a>
+			<a href="https://www.niupic.com/" target="_blank" style="color:black">牛图网</a>
+			<a href="https://cn.wordpress.org/" target="_blank" style="color:black">WordPress</a>
+			<a href="https://www.iconfont.cn/" target="_blank" style="color:black">IconFont</a>
+		</div>
+    
+		<div class="text-center img-responsive">
+			<img src="https://i.niupic.com/images/2019/05/24/_324.png" alt="" width="260px;" />
+		</div>
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div style="align-content: center;text-align: center;margin-bottom: 10px;">
+				<span class="copyright" style="font-size: 0.5em">
+					鲁ICP备19008202号&nbsp;&nbsp;Copyright 2019. All rights reserved.&nbsp;&nbsp;&nbsp;
+					<a href="../page/copyright/default.html">使用条款</a>
+					&nbsp;&nbsp;&nbsp;
+					<a href="https://blog.sameen.art/contact-me/">反馈</a>
+				</span>
+				
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

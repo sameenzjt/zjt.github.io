@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://v.bootstrapmb.com/2018/12/msr7e3328/ -->
+<html data-blockbyte-bs-uid="33330"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>2019新年倒计时雪花代码</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Aleo");
+
+        :root {
+            font-family: "Aleo", sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: rgb(119, 13, 13);
+            background: radial-gradient( circle, rgba(119, 13, 13, 0.92) 64%, rgba(0, 0, 0, 0.6) 100% );
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .label {
+            font-size: 2.2rem;
+            background: url("https://i.niupic.com/images/2019/04/14/6efI.jpg");
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: moveBg 30s linear infinite;
+        }
+
+        @keyframes moveBg {
+            0% {
+                background-position: 0% 30%;
+            }
+
+            100% {
+                background-position: 1000% 500%;
+            }
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            user-select: none;
+        }
+
+        .time {
+            color: #d99c3b;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+        }
+
+            .time span {
+                padding: 0 14px;
+                font-size: 0.8rem;
+            }
+
+                .time span div {
+                    font-size: 3rem;
+                }
+
+        @media (max-width: 740px) {
+            .label {
+                font-size: 1.7rem;
+            }
+
+            .time span {
+                padding: 0 16px;
+                font-size: 0.6rem;
+            }
+
+                .time span div {
+                    font-size: 2rem;
+                }
+        }
+    </style>
+<style type="text/css">
+:root .container > a.mid-wrapper,
+:root .footer > #box[style="width:100%;height:100%;position:fixed;top:0"],
+:root .content > a > .topline
+{ display: none !important; }</style><style class="blockbyte-bs-style" data-name="content">body>div#blockbyte-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible,body>iframe#blockbyte-bs-overlay.blockbyte-bs-visible{opacity:1;pointer-events:auto}body.blockbyte-bs-noscroll{overflow:hidden !important}body>div#blockbyte-bs-indicator>div{position:absolute;transform:translate3d(-40px, 0, 0);top:0;left:0;width:40px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#blockbyte-bs-indicator>div>span{-webkit-mask:no-repeat center/32px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#blockbyte-bs-indicator[data-pos='right']{left:auto;right:0}body>div#blockbyte-bs-indicator[data-pos='right']>div{transform:translate3d(40px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#blockbyte-bs-indicator.blockbyte-bs-fullHeight>div{border-radius:0}body>div#blockbyte-bs-indicator.blockbyte-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb{height:100% !important;top:0 !important}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div{background:transparent}body>div#blockbyte-bs-indicator[data-pos='left'].blockbyte-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#blockbyte-bs-sidebar{width:350px;max-width:none;height:0;z-index:2147483646;background-color:rgba(255,255,255,0.8) !important;border:none;display:block !important;transform:translate3d(-350px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(350px, 0, 0)}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-visible{width:calc(100% + 350px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask{background:none !important}body>iframe#blockbyte-bs-sidebar.blockbyte-bs-hideMask:not(.blockbyte-bs-hover){width:calc(350px + 50px)}body>iframe#blockbyte-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style></head>
+<body>
+    <div class="middle">
+        <h1 class="label">New Year Countdown </h1>
+        <div class="time">
+            <span>
+                <div id="d">365</div>
+                Days
+            </span> <span>
+                <div id="h">24</div>
+                Hours
+            </span> <span>
+                <div id="m">60</div>
+                Minutes
+            </span> <span>
+                <div id="s">60</div>
+                Seconds
+            </span>
+        </div>
+    </div>
+
+    <script>
+class Snowflake {
+    constructor() {
+        this.x = 0;
+        this.y = 0;
+        this.vx = 0;
+        this.vy = 0;
+        this.radius = 0;
+        this.alpha = 0;
+
+        this.reset();
+    }
+
+    reset() {
+        this.x = this.randBetween(0, window.innerWidth);
+        this.y = this.randBetween(0, -window.innerHeight);
+        this.vx = this.randBetween(-3, 3);
+        this.vy = this.randBetween(2, 5);
+        this.radius = this.randBetween(1, 4);
+        this.alpha = this.randBetween(0.1, 0.9);
+    }
+
+    randBetween(min, max) {
+        return min + Math.random() * (max - min);
+    }
+
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.y + this.radius > window.innerHeight) {
+            this.reset();
+        }
+    }
+}
+
+class Snow {
+    constructor() {
+        this.canvas = document.createElement("canvas");
+        this.ctx = this.canvas.getContext("2d");
+
+        document.body.appendChild(this.canvas);
+
+        window.addEventListener("resize", () => this.onResize());
+        this.onResize();
+        this.updateBound = this.update.bind(this);
+        requestAnimationFrame(this.updateBound);
+
+        this.createSnowflakes();
+    }
+
+    onResize() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+        this.canvas.width = this.width;
+        this.canvas.height = this.height;
+    }
+
+    createSnowflakes() {
+        const flakes = window.innerWidth / 4;
+
+        this.snowflakes = [];
+
+        for (let s = 0; s < flakes; s++) {
+            this.snowflakes.push(new Snowflake());
+        }
+    }
+
+    update() {
+        this.ctx.clearRect(0, 0, this.width, this.height);
+
+        for (let flake of this.snowflakes) {
+          flake.update();
+
+          this.ctx.save();
+          this.ctx.fillStyle = "#FFF";
+          this.ctx.beginPath();
+          this.ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
+          this.ctx.closePath();
+          this.ctx.globalAlpha = flake.alpha;
+          this.ctx.fill();
+          this.ctx.restore();
+        }
+    requestAnimationFrame(this.updateBound);
+}
+        }
+
+new Snow();
+
+
+        ////////////////////////////////////////////////////////////
+
+        // Simple CountDown Clock
+
+        const comingdate = new Date("Jan 1, 2019 00:00:00");
+
+        const d = document.getElementById("d");
+        const h = document.getElementById("h");
+        const m = document.getElementById("m");
+        const s = document.getElementById("s");
+
+        const countdown = setInterval(() => {
+            const now   = new Date();
+        const des   = comingdate.getTime() - now.getTime();
+        const days  = Math.floor(des / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((des % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const mins  = Math.floor((des % (1000 * 60 * 60)) / (1000 * 60));
+        const secs  = Math.floor((des % (1000 * 60)) / 1000);
+
+        d.innerHTML = getTrueNumber(days);
+        h.innerHTML = getTrueNumber(hours);
+        m.innerHTML = getTrueNumber(mins);
+        s.innerHTML = getTrueNumber(secs);
+
+        if (x <= 0) clearInterval(x);
+        }, 1000);
+
+        const getTrueNumber = x => (x < 10 ? "0" + x : x);
+    </script>
+
+</body></html>
