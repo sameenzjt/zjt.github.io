@@ -1,0 +1,22 @@
+.nav-tertiary {
+    background-color: rgba(255,255,255,0.9);
+    -webkit-transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+    -webkit-transition-property: background-color, -webkit-backdrop-filter;
+    transition-property: background-color, -webkit-backdrop-filter;
+    transition-property: background-color, backdrop-filter;
+    transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+
+   
+    border-bottom:solid 1px #e4e4e4;
+}
+
+@supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)){
+.nav-tertiary {
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.72);
+    border-bottom:solid 1px #e4e4e4;
+}
+}
+
